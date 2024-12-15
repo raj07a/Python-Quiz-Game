@@ -48,29 +48,13 @@ Collects user input and validates it against the correct answer.
 Score Calculation
 Increments the score for every correct answer.
 Displays the final score and performance summary.
-Code Highlights
-Random Question Selection
-python
-Copy code
-random_question = random.choice(questions_data)
-while random_question in asked_questions:
-    random_question = random.choice(questions_data)
-Input Validation
-python
-Copy code
-try:
-    user_answer = int(input("Enter the answer (1/2/3/4): "))
-except ValueError:
-    print("Invalid input! Please enter a number between 1 and 4.")
-    continue
-Final Score Display
-python
-Copy code
-print(f"\nYour final score is: {score}/5")
+
+
 Future Enhancements
 Add levels of difficulty (easy, medium, hard).
 Integrate a graphical user interface (GUI) using libraries like Tkinter or PyQt.
 Store high scores persistently using a database or file.
 Expand the question bank dynamically via user submissions.
+
 License
 This project is distributed under the MIT License. Feel free to use, modify, and distribute it, subject to the terms of the license.
