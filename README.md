@@ -23,28 +23,26 @@ Tracks the user’s score throughout the game.
 4. Scoring
 Awards points for correct answers.
 Displays the final score at the end of the game.
+
 Project Architecture
 questions.txt: Contains the question bank in the format:
 Copy code
 Question|Option1,Option2,Option3,Option4|CorrectOptionNumber
 quiz_game.py: Main script for game logic and user interaction.
-How to Execute the Project
-Clone the repository or download the project files.
-Ensure Python 3.x is installed on your system.
-Prepare the question bank by creating or editing the questions.txt file with the required format.
-Run the game script using the command:
-Copy code
-python quiz_game.py
-Follow the on-screen instructions to answer the questions.
+
 Functional Modules
+
 Question Parsing
 Reads the question bank file.
 Splits and structures data into questions, options, and the correct answer.
+
 Randomization
 Utilizes Python’s random module to shuffle questions and ensure variety in each session.
+
 Gameplay Logic
 Displays questions and options dynamically.
 Collects user input and validates it against the correct answer.
+
 Score Calculation
 Increments the score for every correct answer.
 Displays the final score and performance summary.
